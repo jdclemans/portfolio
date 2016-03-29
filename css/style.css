@@ -1,0 +1,275 @@
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  background-color:white;
+  font-family: 'lato', sans-serif;
+  font-weight:100;
+  font-size: 1em;
+}
+
+h1,
+h3,
+h4,{
+  color: white;
+  font-family: palatino;
+   }
+
+h3 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color:white
+}
+a:hover {
+  color: #57A4D4;
+}
+
+
+
+.masthead {
+  padding: 18em 0;
+  background-image: url('http://i.imgur.com/318sNCr.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+}
+
+.masthead-intro {
+  text-align:left;
+  margin-bottom: 2em;
+  margin-left: 15%;
+  font-family: palatino;
+  color: white;
+  opacity: .75;
+  font-size: 30px;
+}
+
+.masthead-heading {
+  margin-top: .9em;
+  margin-left: 15%;
+  opacity: .75;
+  font-family: lato;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: .5em;
+  text-transform: uppercase;
+}
+
+
+.masthead-heading > h1 {
+  padding-top: 2em;
+}
+
+.image {
+  border-radius: 300px;
+  height: 25em;
+  width: 25em;
+  margin-left: 15%;
+  color: linear-gradient(
+      rgba(2, 28, 59, 0.1), 
+      rgba(2, 28, 59, .1)
+    )
+  }
+
+.about {
+  padding: 18em 0;
+ /* background: linear-gradient(
+      rgba(255, 255, 255, .2), 
+      rgba(255, 255, 255, .2)
+    ), url('http://i.imgur.com/dTOpcwd.png');
+  background-repeat: no-repeat;*/
+}
+
+
+.about-intro {
+  padding: 1em 0;
+  text-align: right;
+  margin-right: 15%;
+  font-family: "PT Serif";
+  font-size: 30px;
+
+
+}
+
+.about-body {
+  text-align:right;
+  margin-right: 15%;
+  font-family: "PT Serif";
+  max-width: 20em;
+  margin-left: auto;
+  margin-right: 15%;
+
+}
+
+.quotes {
+  padding: 6em 0 24em 0;
+    background: linear-gradient(
+      rgba(11, 175, 109, .4), 
+      rgba(11, 175, 109, .8)
+    ), url('http://i.imgur.com/gDkCKHM.jpg');
+/*  background: linear-gradient(
+      rgba(34, 49, 50, .7), 
+      rgba(34, 49, 50, .7),
+    ), url('http://i.imgur.com/gDkCKHM.jpg');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #303F3F;
+  opacity: 1;
+
+  /* Old version---background-color: #303F3F;
+url('http://i.imgur.com/b0wkgi9.jpg');
+rgba(34, 49, 50, 0)*/
+  }
+
+.quotes-intro {
+ text-align: center;
+  margin: auto;
+  font-family: "PT Serif";
+  font-size: 3rem;
+  color:black;
+  opacity: 1;
+  margin-top: 0em;
+  font-weight: 400;
+}
+
+
+.quotes-body {
+  text-align: center;
+  margin: auto;
+  font-family: "PT Serif";
+  font-size: 20px;
+  max-width: 15em;
+  padding: 1em 0;
+}
+
+
+
+.showcase
+{
+  padding: 22em 0;
+  margin: 2em 0;
+  
+}
+
+.showcase-header,
+.showcase-body
+{
+  max-width: 23em;
+  text-align: center;
+  margin: auto;  
+  font-family: "PT Serif";
+  color: black;
+}
+
+.button {
+  text-align: center;
+  margin-top: 2em; 
+  margin: auto auto; 
+  width: 100px;
+  height: 50px;
+  transition: background-color .3s ease;
+  background-color: #57A4D4;
+  border-radius: 10px;
+  font-family: inherit;
+  color: white;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #0080ff ;
+}
+
+.footer {
+  text-align: center;
+  background: linear-gradient(
+      rgba(34, 49, 50, .7), 
+      rgba(34, 49, 50, .7)
+    ), url('http://i.imgur.com/b0wkgi9.jpg');
+  padding: 6em 0;
+  background-size: cover;
+
+/*Old footer---http://i.imgur.com/HuEs7vr.jpg
+*/  
+}
+.footer-header {
+  text-align: center;
+  padding: 5em, 0em;
+  font-family: "PT Serif";
+  font-size: 25px;
+
+  
+}
+.footer-body {
+  text-align: center;
+  color: white;
+  padding-top: 5em, 0;
+  font-family: "PT Serif";
+
+}
+
+.footer-body > li {
+  display: inline-block;
+  padding-top: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 6em 0;
+    }
+
+    .masthead-heading {
+        font-size: .9em;
+  }
+    .quotes {
+      padding: 6em 0;
+    }
+    .about {
+      padding: 6em 0em;
+    }
+    .showcase {
+      padding: 6em 0;
+    }
+    .footer {
+      padding: 3em 0;
+    }
+
+    .about-intro {
+      font-size: 2em;
+
+    }
+    .about-body {
+      font-size: 1em;
+      padding: 0 0 0 em;
+
+    }
+    .quotes-intro {
+      font-size: 2em;
+
+    }
+    .quotes-body {
+      font-size: .5em;
+
+    }
+
+    .showcase-header,
+    .showcase-body {
+      font-size: 1em;
+      padding: 3em;
+
+    }
+    .footer-header {
+      font-size: .85em;
+
+    }
+    .footer-body {
+      font-size: .85em;
+
+    }
+}
+
