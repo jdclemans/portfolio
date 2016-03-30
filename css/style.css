@@ -26,17 +26,19 @@ a {
   text-decoration: none;
   color:white
 }
-a:hover {
-  color: #57A4D4;
-}
 
+.shieldwall {
+  margin: 6em;
+
+}
 
 
 .masthead {
   padding: 18em 0;
-  background-image: url('http://i.imgur.com/318sNCr.jpg');
+  background-image: url('../images/sky.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center right;
   color:white;
 }
 
@@ -107,65 +109,74 @@ a:hover {
 
 }
 
-.quotes {
-  padding: 6em 0 24em 0;
-    background: linear-gradient(
-      rgba(11, 175, 109, .4), 
-      rgba(11, 175, 109, .8)
-    ), url('http://i.imgur.com/gDkCKHM.jpg');
-/*  background: linear-gradient(
-      rgba(34, 49, 50, .7), 
-      rgba(34, 49, 50, .7),
-    ), url('http://i.imgur.com/gDkCKHM.jpg');*/
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #303F3F;
-  opacity: 1;
+/*Tiles*/
 
-  /* Old version---background-color: #303F3F;
-url('http://i.imgur.com/b0wkgi9.jpg');
-rgba(34, 49, 50, 0)*/
-  }
+@import "compass/css3";
 
-.quotes-intro {
- text-align: center;
-  margin: auto;
-  font-family: "PT Serif";
-  font-size: 3rem;
-  color:black;
-  opacity: 1;
-  margin-top: 0em;
-  font-weight: 400;
-}
-
-
-.quotes-body {
-  text-align: center;
-  margin: auto;
-  font-family: "PT Serif";
-  font-size: 20px;
-  max-width: 15em;
-  padding: 1em 0;
-}
-
-
-
-.showcase
-{
-  padding: 22em 0;
-  margin: 2em 0;
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-.showcase-header,
-.showcase-body
-{
-  max-width: 23em;
+.flex-item {
+
+  padding: 0;
+  width:  33.33333%;
+  height: 33.33333%;
+  margin-top: 0px;
+  
+  line-height: 300px;
+  color: white;
+  font-size: 3em;
   text-align: center;
-  margin: auto;  
-  font-family: "PT Serif";
-  color: black;
 }
+
+.flex-item-guitar,
+.flex-item-development,
+.flex-item-words {
+  height: 100%
+  width: 100%;
+}
+
+.flex-item-music {
+      background: linear-gradient(
+      rgba(11, 175, 109, .9), 
+      rgba(11, 175, 109, .9)
+    ), url('../images/guitar.jpeg');
+      background-size: cover;
+
+}
+.flex-item-development {
+    background: linear-gradient(
+      rgba(45, 193, 133, .9), 
+      rgba(45, 193, 133, .9)
+    ), url('../images/development.jpeg');
+      background-size: cover;
+      display: block;
+}
+
+.flex-item-words {
+    background: linear-gradient(
+      rgba(84, 151, 206, .9), 
+      rgba(84, 151, 206, .9)
+    ), url('../images/words.jpeg');
+      background-size: cover;
+}
+
+.tile-text {
+  text-align: center;
+}
+
 
 .button {
   text-align: center;
@@ -185,6 +196,36 @@ button:hover {
   background-color: #0080ff ;
 }
 
+/*Footer*/
+
+.social {
+  margin: 0 0 6rem 0;
+}
+
+.cases {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    color: black;
+    padding-top: 3em;
+  }
+
+.cases .icons li {
+  width: 2.5rem;
+  text-align: center;
+  display: inline-block;
+  color: #838994;
+  padding: 0.625rem 0;
+  margin: 1.25rem 3rem;
+}
+
+.cases h5 {
+  font-family: garamond;
+    font-weight: 400;
+    font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
 .footer {
   text-align: center;
   background: linear-gradient(
@@ -194,8 +235,6 @@ button:hover {
   padding: 6em 0;
   background-size: cover;
 
-/*Old footer---http://i.imgur.com/HuEs7vr.jpg
-*/  
 }
 .footer-header {
   text-align: center;
@@ -217,6 +256,8 @@ button:hover {
   display: inline-block;
   padding-top: 1rem;
 }
+
+/*Responsive*/
 
 @media only screen and (max-width: 500px) {
     .masthead {
@@ -248,14 +289,7 @@ button:hover {
       padding: 0 0 0 em;
 
     }
-    .quotes-intro {
-      font-size: 2em;
 
-    }
-    .quotes-body {
-      font-size: .5em;
-
-    }
 
     .showcase-header,
     .showcase-body {
