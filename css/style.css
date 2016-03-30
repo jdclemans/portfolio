@@ -12,6 +12,7 @@ body {
 }
 
 h1,
+h2,
 h3,
 h4,{
   color: white;
@@ -27,14 +28,8 @@ a {
   color:white
 }
 
-.shieldwall {
-  margin: 6em;
-
-}
-
-
 .masthead {
-  padding: 18em 0;
+  padding: 16em 0;
   background-image: url('../images/sky.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,7 +75,7 @@ a {
   }
 
 .about {
-  padding: 18em 0;
+  padding: 16em 0;
  /* background: linear-gradient(
       rgba(255, 255, 255, .2), 
       rgba(255, 255, 255, .2)
@@ -93,19 +88,22 @@ a {
   padding: 1em 0;
   text-align: right;
   margin-right: 15%;
-  font-family: "PT Serif";
-  font-size: 30px;
+  font-family: 'palatino', sans-serif;";
+  font-size: 3rem;
+}
 
-
+.about-intro {
+  font-size: 3rem;
 }
 
 .about-body {
   text-align:right;
   margin-right: 15%;
-  font-family: "PT Serif";
+  font-family: 'palatino';
   max-width: 20em;
   margin-left: auto;
   margin-right: 15%;
+  font-size: 1.8rem;
 
 }
 
@@ -134,18 +132,20 @@ a {
   width:  33.33333%;
   height: 33.33333%;
   margin-top: 0px;
-  
   line-height: 300px;
   color: white;
   font-size: 3em;
   text-align: center;
+
 }
 
 .flex-item-guitar,
 .flex-item-development,
 .flex-item-words {
-  height: 100%
+  max-height: 300px;
   width: 100%;
+  height: 100%;
+  ;
 }
 
 .flex-item-music {
@@ -156,6 +156,16 @@ a {
       background-size: cover;
 
 }
+
+.flex-item-music:hover {
+      background: linear-gradient(
+      rgba(84, 151, 206, .9), 
+      rgba(84, 151, 206, .9)
+    ), url('../images/guitar.jpeg');
+      background-size: cover;
+
+}
+
 .flex-item-development {
     background: linear-gradient(
       rgba(45, 193, 133, .9), 
@@ -165,10 +175,29 @@ a {
       display: block;
 }
 
+.flex-item-development:hover {
+    background: linear-gradient(
+      rgba(21, 100, 166, .9), 
+      rgba(21, 100, 166, .9)
+    ), url('../images/development.jpeg');
+     background-size: cover;
+      display: block;
+
+
+  }
+
 .flex-item-words {
     background: linear-gradient(
       rgba(84, 151, 206, .9), 
       rgba(84, 151, 206, .9)
+    ), url('../images/words.jpeg');
+      background-size: cover;
+}
+
+.flex-item-words:hover {
+    background: linear-gradient(
+      rgba(11, 175, 109, .9), 
+      rgba(11, 175, 109, .9)
     ), url('../images/words.jpeg');
       background-size: cover;
 }
@@ -259,7 +288,7 @@ button:hover {
 
 /*Responsive*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .masthead {
         padding: 6em 0;
     }
@@ -289,12 +318,10 @@ button:hover {
       padding: 0 0 0 em;
 
     }
-
-
-    .showcase-header,
-    .showcase-body {
-      font-size: 1em;
-      padding: 3em;
+    .flex-item {
+      padding: 0;
+      width:  100%;
+      height: 100%;
 
     }
     .footer-header {
@@ -307,3 +334,33 @@ button:hover {
     }
 }
 
+
+@media (min-width: 1500px) 
+{
+    .masthead {
+        padding: 22em 0;
+    }
+
+    .masthead-heading {
+        font-size: 2rem;
+  }
+
+    .about {
+      padding: 22em 0em;
+    }
+
+  .flex-item {
+
+  }
+
+    .flex-item-guitar,
+    .flex-item-development,
+    .flex-item-words {
+      height: 100%;
+    }
+
+    .social {
+      padding: 3em 0;
+    }
+
+  }
