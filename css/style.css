@@ -159,8 +159,8 @@ a {
 
 .flex-item-music:hover {
       background: linear-gradient(
-      rgba(84, 151, 206, .9), 
-      rgba(84, 151, 206, .9)
+      rgba(67, 65, 102, .9), 
+      rgba(67, 65, 102, .9)
     ), url('../images/guitar.jpeg');
       background-size: cover;
 
@@ -196,8 +196,8 @@ a {
 
 .flex-item-words:hover {
     background: linear-gradient(
-      rgba(11, 175, 109, .9), 
-      rgba(11, 175, 109, .9)
+      rgba(108,  107, 176, .9), 
+      rgba(108,  107, 176, .9)
     ), url('../images/words.jpeg');
       background-size: cover;
 }
