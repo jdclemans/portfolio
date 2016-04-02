@@ -1,3 +1,5 @@
+/**/
+
 
 * {
   margin: 0;
@@ -29,7 +31,7 @@ a {
 }
 
 .masthead {
-  padding: 15em 0;
+  padding: 10em 0 20em 0;
   background-image: url('../images/sky.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,16 +50,27 @@ a {
 }
 
 .masthead-heading {
-  margin-top: .9em;
+  margin-top: 0; /*used to be .9em*/
   margin-left: 15%;
   opacity: .75;
   font-family: lato;
   font-size: 30px;
   font-weight: 100;
-  letter-spacing: .5em;
+  letter-spacing: .3em;
   text-transform: uppercase;
+  max-width: 70rem;
 }
-
+.masthead-heading-author {
+  margin-top: 1em; /*used to be .9em*/
+  margin-left: 55%;
+  opacity: .75;
+  font-family: lato;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  font-style: italic;
+}
 
 .masthead-heading > h1 {
   padding-top: 2em;
@@ -290,10 +303,10 @@ button:hover {
 
 @media only screen and (max-width: 700px) {
     .masthead {
-        padding: 6em 0;
+        padding: 4em 0 8em 0;
     }
 
-    .masthead-heading {
+    .masthead-heading, .masthead-heading-author {
         font-size: .9em;
   }
     .quotes {
@@ -341,7 +354,8 @@ button:hover {
         padding: 22em 0;
     }
 
-    .masthead-heading {
+    .masthead-heading,
+.masthead-heading-author  {
         font-size: 2rem;
   }
 
